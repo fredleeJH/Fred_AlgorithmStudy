@@ -1,2 +1,2 @@
 # Fred_AlgorithmStudy
-This is an auto push repository for Baekjoon Online Judge created with [BaekjoonHub](https://github.com/BaekjoonHub/BaekjoonHub).
+하루에 알고리즘 문제를 한 개 이상 꼭 풀기
