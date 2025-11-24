@@ -1,0 +1,34 @@
+package com.example.kotlinstudy
+
+/*
+N개의 정수가 주어진다. 이때, 최솟값과 최댓값을 구하는 프로그램을 작성하시오.
+
+입력
+첫째 줄에 정수의 개수 N (1 ≤ N ≤ 1,000,000)이 주어진다. 둘째 줄에는 N개의 정수를 공백으로 구분해서 주어진다. 모든 정수는 -1,000,000보다 크거나 같고, 1,000,000보다 작거나 같은 정수이다.
+5
+20 10 35 30 7
+ */
+import java.io.BufferedReader
+import java.io.BufferedWriter
+import java.io.InputStreamReader
+import java.io.OutputStreamWriter
+
+fun main() {
+    val br = BufferedReader(InputStreamReader(System.`in`))
+    val bw = BufferedWriter(OutputStreamWriter(System.out))
+    
+    val N = br.readLine().toInt()
+    
+    val numbers = br.readLine()
+        .split(" ")
+        .map { it.toInt() }
+    
+    val minValue = numbers.minOrNull()!!
+    val maxValue = numbers.maxOrNull()!!
+    
+    bw.write("$minValue $maxValue")
+    
+    bw.flush()
+    bw.close()
+    br.close()
+}
